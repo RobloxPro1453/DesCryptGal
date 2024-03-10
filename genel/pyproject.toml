@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "DesForGal"
+version = "0.1"
+description = "Des şifreleme sistemi"
+authors = ["RobloxPro1453]
+readme = "README.md"
+license = "CC-BY-NC-ND-4.0"
+repository = "https://github.com/RobloxPro1453/DesCryptGal"
+keywords = ["DES","şifreleme","encrypt","decrypt"]
+
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.12"
+]
+
+packages = [
+  { include = "descryptgal" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+questionary = "*"
+rich = ">=13.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+rundes = 'descryptgal.__main__:menu_loop'
